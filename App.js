@@ -1,14 +1,11 @@
 // console.log('sdkfjnskdf');
-// console.log("Heloow world" + " lets start") 
+// console.log("Heloow world" + " lets start")
 // console.log("Fasilakis" [0])
 
 // console.log('1231413423'.length)
 
-
-
 // let myNumber = "ilias fasilakis";
 // console.log(myNumber.length);
-
 
 // console.log(myNumber[myNumber.length - 1])
 
@@ -24,15 +21,12 @@
 // let fahrenheit = celsius*1.8 + 32;
 // console.log(fahrenheit);
 
-
-
 // let number1 = '10';
 
 // let number2 = 10;
 
 // number1 == number2;
 // console.log(number2);
-
 
 // let subscribed = false;
 //  if(subscribed === true)
@@ -48,7 +42,7 @@
 // if (cash > price)
 
 // {
-    
+
 //     console.log(`you paid more.. here is your change ${cash - price} `)
 
 // }
@@ -65,23 +59,17 @@
 
 //     }
 
- 
-
-
 /** TERNARY OPERATORS */
 
 //     let hot = true;
 
 // hot? console.log("its hot out there..") : console.log('its cold here');
 
-
-
 // let subscribed = true;
 // let loggedIn = true;
 
 // let str = subscribed && loggedIn ? 'show the video' : "you need to login and subscribe to see the video";
 // console.log(str);
-
 
 // let cash = 50;
 // let price = 100;
@@ -90,24 +78,86 @@
 // let result = price<=cash && isStoreOpen ? "give receipt" : "do not give receipt";
 // console.log(result);
 
-
-
-
-
-
 /*LOOPS ------- DRY (Dont Repeat Yourself)*/
 /*count from 1 to 100*/
 
-let count = 1;
+/*WHILE LOOP*/
+
+// let count = 1;
+
+// while(count<=100)
+// {
+//     console.log(count);
+//     count+=1;
+
+// }
+
+//FOR LOOP
+
+// for(let i=1; i<=20; i=i+1)
+
+// {
+
+// console.log(i);
+
+// if (i % 3 === 0 && i % 5=== 0)
+// {
+
+//     console.log(`${i}----->Tigka kwlofanara`)
+
+// }
+
+//  else if(i % 3 === 0) {
+
+//     console.log(`${i}---->Tigaaaaa`)
+
+// }
+//  else if (i % 5===0 ) {
+
+//     console.log(`${i}---->kwlofanara`)
+// }
+
+// else{
+
+//     console.log(i)
+// }
+
+// }
+
+// Frontend Simplified ---- Print every letter
+
+// let string = "Frontend Simplified";
+
+// for (i = 0; i <= 18; ++i) {
+//   console.log(`'${string[i]}'`);
+// }
+
+/* FUNCTIONS */
 
 
-while(count<=100) 
-{
-    console.log(count);
-    count+=1;
-    
+
+
+// function welcomePerson(name){
+
+//     console.log(`Welcome to the class ${name}`);
+
+// }
+// welcomePerson('ilias');
+
+
+
+
+function sumOfTwoNumbers(num1, num2) {
+
+
+return num1 + num2
+
+
 
 }
+
+
+  console.log(sumOfTwoNumbers(5, 6));
 
 
 
