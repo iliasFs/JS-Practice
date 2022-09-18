@@ -134,9 +134,6 @@
 
 /* FUNCTIONS */
 
-
-
-
 // function welcomePerson(name){
 
 //     console.log(`Welcome to the class ${name}`);
@@ -144,34 +141,23 @@
 // }
 // welcomePerson('ilias');
 
-
-
-
 // function sumOfTwoNumbers(num1, num2) {
-
 
 // return num1 + num2
 
-
-
 // }
 
-
 //   console.log(sumOfTwoNumbers(5, 6));
-
 
 // function convertTemperature(celsious) {
 
 //  console.log(celsious*1.8 +32);
 
-
 // }
-
 
 // convertTemperature(0);
 // convertTemperature(10);
 // convertTemperature(30);
-
 
 // const convertTemperature = (celsius) => {
 
@@ -181,15 +167,67 @@
 
 // console.log(convertTemperature(10));
 
-let arr = [10,20,30,40,50];
-console.log(arr);
+// let arr = [10,20,30,40,50];
+// console.log(arr);
 
-console.log(arr[arr.length -1]);
+// console.log(arr[arr.length -1]);
+
+// arr.push(200);
+
+// console.log(arr);
+// arr.filter
+
+// let arr = [20, 30, 40, 50, 100];
+
+// let newArr = arr.filter((element) => {
+//   console.log(element);
+//   if (element < 50) {
+//     return true;
+//   }
+// });
+
+// console.log(newArr);
 
 
-arr.push(200);
 
-console.log(arr);
-arr.filter
+/*  THE SAME CODE WITH LESS LINES */
 
- 
+// let arr = [20, 30, 40, 50, 100];
+
+// let newArr = arr.filter(whatever => whatever< 50);
+
+// console.log(newArr);
+
+
+// let arr = ['FAIL', 'FAIL', 'B'];
+
+// let newArr = arr.filter(element => {
+
+// if (element === 'A+' ||  element === 'A' || element === 'B') {
+
+//     return true;
+
+// }
+
+// })
+
+// console.log(newArr);
+
+// let arr = ['A+','A', 'B', 'FAIL', 'A']
+// let grades = ['A+', 'A', 'FAIL']
+// let goodGrades = [];
+
+// for (let i = 0; i< arr.length; i++) {
+
+//     if(arr[i] !== 'FAIL') {
+
+//         goodGrades.push(arr[i]);
+//     }
+    
+
+// }
+// console.log(goodGrades);
+
+
+
+
