@@ -147,19 +147,49 @@
 
 
 
-function sumOfTwoNumbers(num1, num2) {
+// function sumOfTwoNumbers(num1, num2) {
 
 
-return num1 + num2
-
-
-
-}
-
-
-  console.log(sumOfTwoNumbers(5, 6));
+// return num1 + num2
 
 
 
+// }
 
 
+//   console.log(sumOfTwoNumbers(5, 6));
+
+
+// function convertTemperature(celsious) {
+
+//  console.log(celsious*1.8 +32);
+
+
+// }
+
+
+// convertTemperature(0);
+// convertTemperature(10);
+// convertTemperature(30);
+
+
+// const convertTemperature = (celsius) => {
+
+//   return celsius*1.8 +32;
+
+// }
+
+// console.log(convertTemperature(10));
+
+let arr = [10,20,30,40,50];
+console.log(arr);
+
+console.log(arr[arr.length -1]);
+
+
+arr.push(200);
+
+console.log(arr);
+arr.filter
+
+ 
