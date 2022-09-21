@@ -229,5 +229,62 @@
 // console.log(goodGrades);
 
 
+// let dollars = [1, 5, 10, 3];
+
+// let cents = dollars.map(element =>  element*100)
+
+// console.log(cents);
+
+
+
+
+
+
+
+
+
+/* DOOOOOOOOOOOOM - DOCUMENT OBJECT MODEL -- ALLOWS YOU TO ACCESSAND CHANGE THE STYLING AND CONTENTS OF ELEMENTS ON YOUR WEBSITE*/
+
+
+
+//first way to access an element
+
+
+//console.log(document.querySelector('#title'));
+
+
+
+//second way to access an element
+
+
+//document.getElementById('title').innerHTML = 'Well done';
+
+//Change CSS
+
+// document.querySelector('#title').style.color = 'red';
+// document.querySelector('#title').style.fontSize = '60px';
+
+// function changeTitleToRed() {
+
+//     document.querySelector('#title').style.color = 'Yellow';
+//     return;
+    
+
+// }
+
+function toggleDarkMode(){
+
+    document.querySelector('body').classList.toggle('dark__theme')
+
+
+
+}
+
+
+
+
+
+
+
 
 
