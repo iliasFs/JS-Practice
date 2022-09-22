@@ -188,8 +188,6 @@
 
 // console.log(newArr);
 
-
-
 /*  THE SAME CODE WITH LESS LINES */
 
 // let arr = [20, 30, 40, 50, 100];
@@ -197,7 +195,6 @@
 // let newArr = arr.filter(whatever => whatever< 50);
 
 // console.log(newArr);
-
 
 // let arr = ['FAIL', 'FAIL', 'B'];
 
@@ -223,11 +220,9 @@
 
 //         goodGrades.push(arr[i]);
 //     }
-    
 
 // }
 // console.log(goodGrades);
-
 
 // let dollars = [1, 5, 10, 3];
 
@@ -235,27 +230,13 @@
 
 // console.log(cents);
 
-
-
-
-
-
-
-
-
 /* DOOOOOOOOOOOOM - DOCUMENT OBJECT MODEL -- ALLOWS YOU TO ACCESSAND CHANGE THE STYLING AND CONTENTS OF ELEMENTS ON YOUR WEBSITE*/
-
-
 
 //first way to access an element
 
-
 //console.log(document.querySelector('#title'));
 
-
-
 //second way to access an element
-
 
 //document.getElementById('title').innerHTML = 'Well done';
 
@@ -268,23 +249,52 @@
 
 //     document.querySelector('#title').style.color = 'Yellow';
 //     return;
-    
 
 // }
 
-function toggleDarkMode(){
+// function toggleDarkMode(){
 
-    document.querySelector('body').classList.toggle('dark__theme')
+//     document.querySelector('body').classList.toggle('dark__theme')
 
+// }
 
+// PROMISES
 
+//fetch("https://jsonplaceholder.typicode.com/users/1")
+
+//then (method)
+
+// fetch("https://jsonplaceholder.typicode.com/users/1").then((response) => {
+
+// })
+
+let Array = [7, 13, 6, 300,600, 33, 33, 56,76,44,99,99,99];
+
+let doubleArray = [];
+let tripleArray = [];
+let sum1 = 0;
+let sum2 = 0;
+
+function arraySub(Array) {
+  for (let i = 0; i < Array.length; ++i) {
+    if (Array[i] < 100 && Array[i] > 9) {
+      doubleArray.push(Array[i]);
+    } else if (Array[i] > 100 && Array[i] < 1000) {
+      tripleArray.push(Array[i]);
+    }
+
+    doubleArray.reduce((num1, num2) => {
+      sum1 = num1 + num2;
+      return sum1;
+    }, 0);
+
+    tripleArray.reduce((num3, num4) => {
+      sum2 = num3 + num4;
+      return sum2;
+    }, 0);
+  }
+
+  console.log(sum2 - sum1);
 }
 
-
-
-
-
-
-
-
-
+arraySub(Array);
