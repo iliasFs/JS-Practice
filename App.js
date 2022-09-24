@@ -268,33 +268,79 @@
 
 // })
 
-let Array = [7, 13, 6, 300,600, 33, 33, 56,76,44,99,99,99];
+// let Array = [7, 13, 6, 300,600, 33, 33, 56,76,44,99,99,99];
 
-let doubleArray = [];
-let tripleArray = [];
-let sum1 = 0;
-let sum2 = 0;
+// let doubleArray = [];
+// let tripleArray = [];
+// let sum1 = 0;
+// let sum2 = 0;
 
-function arraySub(Array) {
-  for (let i = 0; i < Array.length; ++i) {
-    if (Array[i] < 100 && Array[i] > 9) {
-      doubleArray.push(Array[i]);
-    } else if (Array[i] > 100 && Array[i] < 1000) {
-      tripleArray.push(Array[i]);
+// function arraySub(Array) {
+//   for (let i = 0; i < Array.length; ++i) {
+//     if (Array[i] < 100 && Array[i] > 9) {
+//       doubleArray.push(Array[i]);
+//     } else if (Array[i] > 100 && Array[i] < 1000) {
+//       tripleArray.push(Array[i]);
+//     }
+
+//     doubleArray.reduce((num1, num2) => {
+//       sum1 = num1 + num2;
+//       return sum1;
+//     }, 0);
+
+//     tripleArray.reduce((num3, num4) => {
+//       sum2 = num3 + num4;
+//       return sum2;
+//     }, 0);
+//   }
+
+//   console.log(sum2 - sum1);
+// }
+
+// arraySub(Array);
+
+//project//
+
+// let array = ["Mahesh", "Ruhez", 23, 31, "sameer"];
+
+// var a = array[2] + array[3];
+// console.log("the sum of the numbers in the array is:" + a);
+
+// let str1 = array[0].length;
+// console.log("the length of the 2nd element of the array is:" + str1);
+
+// let str2 = array[1].length;
+// console.log("the length of the 3rd element of the array is:" + str2);
+
+// let str3 = array[4].length;
+// console.log("the length of the 5th element of the array is:" + str3);
+
+// let Sub = a - str1 - str2 - str3;
+
+// console.log(Sub);
+
+let array = ["Mahesh", "Ruhez", 23, 31, "sameer"];
+
+let sumOfNumbers = 0;
+let lengthOfStrings = 0;
+let sum = 0;
+
+function sums(array) {
+  for (let i = 0; i < array.length; ++i) {
+    if (typeof array[i] === "string") {
+      lengthOfStrings += array[i].length;
+    } else if (typeof array[i] !== "string") {
+      sumOfNumbers += array[i];
     }
-
-    doubleArray.reduce((num1, num2) => {
-      sum1 = num1 + num2;
-      return sum1;
-    }, 0);
-
-    tripleArray.reduce((num3, num4) => {
-      sum2 = num3 + num4;
-      return sum2;
-    }, 0);
   }
-
-  console.log(sum2 - sum1);
+  console.log("the total length of all the strings is: " + lengthOfStrings);
+  console.log("the total length of all the strings is: " + sumOfNumbers);
+  console.log(
+    "The Subtraction gives us the following result: " +
+      (sumOfNumbers - lengthOfStrings)
+  );
 }
 
-arraySub(Array);
+sums(array);
+
+
