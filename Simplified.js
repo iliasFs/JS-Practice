@@ -28,18 +28,11 @@
 
 // printHi("ilias");
 
-
-
-
-
-
-
 // function printPhrase(name, printfunction ){
 
 // printfunction('Hello ' + name)
 
 // }
-
 
 // printPhrase('ilias', WHATEVER => console.log(WHATEVER))
 
@@ -48,7 +41,6 @@
 //     return function(variable2){
 //         console.log(variable)
 //         console.log(variable2)
-
 
 //     }
 // }
@@ -61,8 +53,6 @@
 // a(3)
 // a(4)
 
-
-
 // // Write your code below
 // const cards = ["diamond", "spade", "heart", "club"];
 
@@ -73,16 +63,14 @@
 // let counter = 0;
 // while (currentCard[counter] !== "spade") {
 //   currentCard = cards[Math.floor(Math.random() * 4)];
-  
+
 // }
 
 // console.log(currentCard);
 
 // const cards = ['diamond', 'spade', 'heart', 'club'];
 
-
 // let currentCard;
-
 
 // while (currentCard != 'spade') {
 // currentCard = cards[Math.floor(Math.random() * 4)];
@@ -110,18 +98,17 @@
 
 // alienShip.takeOff();
 
-
 // let spaceship = {
 //     passengers: null,
 //     telescope: {
 //       yearBuilt: 2018,
 //       model: "91031-XLT",
-//       focalLength: 2032 
+//       focalLength: 2032
 //     },
 //     crew: {
-//       captain: { 
-//         name: 'Sandra', 
-//         degree: 'Computer Engineering', 
+//       captain: {
+//         name: 'Sandra',
+//         degree: 'Computer Engineering',
 //         encourageTeam() { console.log('We got this!') },
 //        'favorite foods': ['cookies', 'cakes', 'candy', 'spinach'] }
 //     },
@@ -138,91 +125,104 @@
 //         terabytes: 50
 //       }
 //     }
-//   }; 
-  
-  
+//   };
+
 //   let capFave = spaceship.crew.captain['favorite foods'][0]
 //   spaceship.passengers = [{'maria': 'pentagiotisa'}]
-  
-  
+
 //   let firstPassenger = spaceship.passengers[0]
 
 //   console.log(firstPassenger.maria)
-
 
 // class HospitalEmployee {
 //     constructor(name) {
 //       this._name = name;
 //       this._remainingVacationDays = 20;
 //     }
-    
+
 //     get name() {
 //       return this._name;
 //     }
-    
+
 //     get remainingVacationDays() {
 //       return this._remainingVacationDays;
 //     }
-    
+
 //     takeVacationDays(daysOff) {
 //       this._remainingVacationDays -= daysOff;
 //     }
 //   }
-  
+
 //   class Nurse extends HospitalEmployee {
 //     constructor(name, certifications) {
 //       super(name);
 //       this._certifications = certifications;
-//     } 
-    
+//     }
+
 //     get certifications() {
 //       return this._certifications;
 //     }
-    
+
 //     addCertification(newCertification) {
 //       this.certifications.push(newCertification);
 //     }
 //   }
-  
+
 //   const nurseOlynyk = new Nurse('Olynyk', ['Trauma','Pediatrics']);
 //   nurseOlynyk.takeVacationDays(5);
 //   console.log(nurseOlynyk.remainingVacationDays);
 //   nurseOlynyk.addCertification('Genetics');
 //   console.log(nurseOlynyk.certifications);
-  
-  
-  
-// function AlphabetSoup(str) { 
 
-//     // code goes here  
+// function AlphabetSoup(str) {
+
+//     // code goes here
 //    let newString =  str.split('').sort().join('');
-  
+
 //     return newString
-   
+
 //   }
 
 //   console.log(AlphabetSoup('hello'))
 
-
-
-
-
 //   const paragrafos = document.getElementById("demo")
 //   AlphabetSoup(array,)
 
+// function ABCheck(str) {
+//   // code goes here
+
+//   if (str.includes("a") && str.includes("b")) {
+//     var diff = str.indexOf("a") - str.indexOf("b");
+//   }
+//   console.log(diff)
+
+//   if (diff === 4 || diff === -4) {
+//     console.log("true");
+//   }
+
+//   else{console.log("false");}
+// }
+
+// ABCheck('Laura sobs');
 
 
+// function VowelCount(str) { 
 
-
-
+//     // code goes here  
+//     let vowels = 'AaEeiIoOUu'
+//     for (i = 0; i<str.length; i++){
   
+      
+//     }
+  
+//   }
 
+// function WordCount(str) { 
 
+//     // code goes here  
+//     console.log(str.split(' ').length); 
+  
+//   }
 
-
-
-
-
-
-
+//   WordCount('sdkjfbksjbf fkjnskfjbn skjnflsjfn ksjfnlsjnf lsnsjnf')
 
