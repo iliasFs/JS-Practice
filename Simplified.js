@@ -205,24 +205,81 @@
 
 // ABCheck('Laura sobs');
 
+// function VowelCount(str) {
 
-// function VowelCount(str) { 
-
-//     // code goes here  
+//     // code goes here
 //     let vowels = 'AaEeiIoOUu'
 //     for (i = 0; i<str.length; i++){
-  
-      
+
 //     }
-  
+
 //   }
 
-// function WordCount(str) { 
+// function WordCount(str) {
 
-//     // code goes here  
-//     console.log(str.split(' ').length); 
-  
+//     // code goes here
+//     console.log(str.split(' ').length);
+
 //   }
 
 //   WordCount('sdkjfbksjbf fkjnskfjbn skjnflsjfn ksjfnlsjnf lsnsjnf')
 
+// let str = "xoxoxoxoxoxoxo";
+// let stringArray = str.split("");
+
+// console.log(stringArray)
+// const xArray = stringArray.filter((char) => char === "x");
+// const oArray = stringArray.filter((char) => char === "o");
+
+// if (xArray.length === oArray.length) {
+//   console.log("true");
+// } else {
+//   console.log("false");
+// }
+// let str = "hello world gfgdfg dfgdfgd dfgdfg";
+// firstArray = str.split(' ').map(item => item[0].toUpperCase())
+// console.log(firstArray)
+
+// sliceArray = str.split(' ').map(item => item.slice(1))
+// console.log(sliceArray)
+
+// console.log(firstArray.concat(sliceArray))
+
+// for (let i = 0; i < sliceArray.length; i++) {
+//   finalArray.push(firstArray[i] + sliceArray[i])}
+
+// console.log(finalArray)
+
+// const paparia = str
+//   .split(" ")
+//   .map((item) => item[0].toUpperCase().concat(item.slice(1)))
+//   .join(" ");
+
+// console.log(paparia);
+
+// let str = "+a+c+b+==+v+";
+// code goes here
+// str.split("").forEach(item =>{
+//     if(item === '+' || item === '='){
+
+//     }
+
+// })
+// ;
+
+// console.log(str.split(""));
+
+function paparia(str) {
+  strArray = str.split("");
+  count = 0;
+  console.log(strArray);
+
+  return strArray.filter((item, index, arr) => {
+    if (arr[index] == arr[index - 1] - 1) {
+      return item;
+    }
+  }).length;
+
+}
+
+console.log(paparia("65"));
