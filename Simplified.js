@@ -1,3 +1,5 @@
+// import "bootstrap/dist/css/bootstrap.css";
+
 // console.log("Hello world");
 
 /*call back functions*/
@@ -269,17 +271,90 @@
 
 // console.log(str.split(""));
 
-function paparia(str) {
-  strArray = str.split("");
-  count = 0;
-  console.log(strArray);
+// function paparia(str) {
+//   strArray = str.split("");
+//   count = 0;
+//   console.log(strArray);
 
-  return strArray.filter((item, index, arr) => {
-    if (arr[index] == arr[index - 1] - 1) {
-      return item;
-    }
-  }).length;
+//   return strArray.filter((item, index, arr) => {
+//     if (arr[index] == arr[index - 1] - 1) {
+//       return item;
+//     }
+//   }).length;
 
-}
+// }
 
-console.log(paparia("65"));
+// console.log(paparia("65"));
+
+// function Superincreasing(arr) {
+//   let sum = 0;
+
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] <= sum) {
+//       return false;
+//     } else {
+//       sum += arr[i];
+//     }
+//   }
+//   return true;
+// }
+
+// console.log(Superincreasing([0,0,0,2,2]));
+
+// function Superincreasing(arr) {
+//   let x = true;
+
+//   let result = arr.reduce((initialValue, currentValue) => {
+//     if (currentValue <= initialValue) {
+//       x = false;
+//     } else {
+//       return currentValue + initialValue;
+//     }
+//   }, 0);
+
+//   return x;
+// }
+
+// console.log(Superincreasing([1, 4, 10, 25]));
+
+// function ChangingSequence(arr) {
+//   if (arr[0] < arr[1]) {
+//     var increcement = true;
+//   } else {
+//     increcement = false;
+//   }
+//   for (let i = 1; i < arr.length; i++)
+//     if (arr[i] > arr[i + 1] && increcement == true) {
+//       return i;
+//     } else if (arr[i] < arr[i + 1] && increcement == false) {
+//       return i;
+//     }
+
+//   return -1;
+// }
+
+// console.log(ChangingSequence([1, 2, 3, 4, 5]));
+// console.log(ChangingSequence([1, 2, 7, 5]));
+// console.log(ChangingSequence([8, 5, 2, 6]));
+
+
+
+
+function disemvowel(str) {
+  
+  let vowels = 'aeiouAEIOU'
+  let finalArray = []
+  let arr = str.split('')
+  arr.filter(item=> {
+
+
+    if item
+  })
+ .join('')
+  
+
+ return finalArray
+ 
+
+
+console.log(disemvowel('malaka ilia ksekolla'))

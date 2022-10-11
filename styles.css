@@ -1,8 +1,11 @@
+
+
+
 *{transition:all 300ms ease;
 }
 
 .dark__theme{
-background-color: black;
+ black;
 }
 
 .dark__theme * {
