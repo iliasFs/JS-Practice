@@ -337,24 +337,134 @@
 // console.log(ChangingSequence([1, 2, 7, 5]));
 // console.log(ChangingSequence([8, 5, 2, 6]));
 
+// function disemvowel(str) {
+//   l;
+//   let strArr = str.split("");
+//   finalArray = [];
+//   str.forEach((item) => {
+//     if (item.match(vowels)) {
+//       finalArray.push(item);
+//     }
+//     console.log(finalArray);
+//   });
+// }
 
+// console.log(disemvowel('malaka ilia ksekolla'))
 
+// function disemvowel(str) {
 
-function disemvowel(str) {
-  
-  let vowels = 'aeiouAEIOU'
-  let finalArray = []
-  let arr = str.split('')
-  arr.filter(item=> {
+//   return str.replace(/[aeiou ]/ig,'')
+// }
+// console.log(disemvowel('This is a work of ART'))
 
+// // //create a function that removes all vowels from string?
 
-    if item
-  })
- .join('')
-  
+// function RemoveVowels(str) {
+//   return str
+//     .split("")
+//     .filter((s) => !s.match(/a|e|i|o|u/i))
+//     .join("");
+// }
+// console.log(RemoveVowels("hello"));
 
- return finalArray
- 
+// function digitalRoot(n) {
+//   function recursiveSum(num) {
+//     if (num < 1) {
+//       return num;
+//     }
+//     return num + recursiveSum(num - 1);
+//   }
+//   if (n < 10) {
+//     return recursiveSum(n);
+//   } else if (n >= 10) {
+//     let textNum = n.toString();
+//     let sum = 0;
+//     for (let i = 0; i < textNum.length; i++) {
+//       sum += parseInt(textNum[i]);
+//     }
+//     return sum;
+//   }
+// }
 
+// console.log(digitalRoot(15));
 
-console.log(disemvowel('malaka ilia ksekolla'))
+// function digitalRoot(n) {
+//   function recursiveSum(num) {
+//     if (num < 1) {
+//       return num;
+//     }
+//     return num + recursiveSum(num - 1);
+//   }
+//   if (n < 10) {
+//     return recursiveSum(n);
+//   } else if (n >= 10) {
+//     var sum = n
+//       .toString()
+//       .split("")
+//       .reduce((acc, curr) => {
+//         return parseInt(acc) + parseInt(curr);
+//       }, 0)
+
+//   }
+
+//   if(n>10){
+
+//   if (sum < 10) {
+//     return sum;
+//   }
+
+//   else{
+
+//      var newsum = sum
+//       .toString()
+//       .split("")
+//       .reduce((accnew, currnew) => {
+//         return parseInt(accnew) + parseInt(currnew)
+//       }, 0)
+
+//     }
+
+//      return new
+
+// }
+
+// console.log(digitalRoot(99876));
+
+// function digitalRoot(n) {
+
+// if (n < 10)
+
+// return n
+
+//   return digitalRoot(
+//     n.toString().split('').reduce((acc, d) => {
+//       return acc + +d;
+//     },0));
+
+//   }
+
+//   console.log(digitalRoot(549872342342))
+
+function DNAStrand(dna) {
+  const newDna = dna
+    .split("")
+    .map((item, index) => {
+      if (item === "A") {
+        item[index] += "T";
+      }
+      if (item === "T") {
+        item[index] += "A";
+      }
+
+      if (item === "C") {
+        item[index] += "G";
+      }
+
+      item[index] += "C";
+    })
+    .join("");
+
+  return newDna;
+}
+
+console.log(DNAStrand("ATTGC"));
