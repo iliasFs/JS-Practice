@@ -445,26 +445,115 @@
 
 //   console.log(digitalRoot(549872342342))
 
-function DNAStrand(dna) {
-  const newDna = dna
+// function DNAStrand(dna) {
+//   const newDna = dna
+//     .split("")
+//     .map((item, index, arr) => {
+
+//     }
+
+//     )}
+
+//   return newDna;
+
+// console.log(DNAStrand("ATTGC"));
+
+// function DNAStrand(dna){
+//   let sequence = {
+//     "A": "T",
+//     "T": "A",
+//     "G": "C",
+//     "C": "G"
+//   }
+//   return dna.replace(/A|T|G|C/g, function(matched){
+//     return sequence[matched];
+//   });
+// }
+
+// function digPow(n, p) {
+//   const nArray = n.toString().split("");
+
+//   var K = 0;
+//   j = 0;
+
+//   for (let i = 0; i < nArray.length; i++) {
+//     K += Math.pow(nArray[i], p + j);
+//     j++;
+//   }
+
+//   K % n === 0? K / n : -1;
+// }
+
+// console.log(digPow(89, 1));
+
+// function tribonacci(signature,n){
+//   let arr = signature
+//   var sigSum = signature.reduce((init, curr)=>{
+//    return init + curr
+
+//     },0)
+
+//   arr.push(sigSum)
+
+//   for(let i =1; i<n; i++){
+
+//   arr.push(arr.reduce((initial, current,index)=>{
+
+//   initial + current[index+ i]
+
+//   }),0)
+
+//     }
+//     return arr
+//   }
+
+// function tribonacci(signature,n)
+// {if (n === 0) {
+//     return []
+//   } else if (n === 1)
+//   {
+//     return [signature[0]]
+//   }
+//     else if(n === 2)
+//       {return [signature[0], signature[1]]}
+
+//    else {
+//     for (let i = 3; i < n; i++) {
+
+//       signature[i] = signature[i - 1] + signature[i - 2] + signature[i - 3]
+
+//     }
+//     return signature
+//   }
+// }
+
+// function tribonacci(signature, n) {
+//   while (signature.length < n)
+//     signature.push(
+//       signature.slice(-3).reduce((total, num) => {
+//         return total + num;
+//       })
+//     );
+//   return signature.slice(0, n);
+// }
+
+// function tribonacci(arr,n){
+//   if (n < 3) return arr.slice(0, n);
+//   return [arr[0]].concat(tribonacci([arr[1], arr[2], arr[0] + arr[1] + arr[2]], n-1));
+// }
+
+function descendingOrder(n) {
+  var result = n
+    .toString()
     .split("")
-    .map((item, index) => {
-      if (item === "A") {
-        item[index] += "T";
-      }
-      if (item === "T") {
-        item[index] += "A";
-      }
-
-      if (item === "C") {
-        item[index] += "G";
-      }
-
-      item[index] += "C";
-    })
+    .sort()
+    .reverse()
     .join("");
 
-  return newDna;
+
+    console.log(typeof(+result))
+  return +result;
+  
 }
 
-console.log(DNAStrand("ATTGC"));
+console.log(descendingOrder(3456));
