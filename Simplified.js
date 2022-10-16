@@ -542,18 +542,71 @@
 //   return [arr[0]].concat(tribonacci([arr[1], arr[2], arr[0] + arr[1] + arr[2]], n-1));
 // }
 
-function descendingOrder(n) {
-  var result = n
-    .toString()
-    .split("")
-    .sort()
-    .reverse()
-    .join("");
+// function descendingOrder(n) {
+//   var result = n
+//     .toString()
+//     .split("")
+//     .sort()
+//     .reverse()
+//     .join("");
 
 
-    console.log(typeof(+result))
-  return +result;
+//     console.log(typeof(+result))
+//   return +result;
   
-}
+// }
 
-console.log(descendingOrder(3456));
+// console.log(descendingOrder(3456));
+
+
+// function GroupTotals(strArr) { 
+
+//   strArr.forEach((item,index,newArr)=>{
+
+// if(item[index] === "'"){
+
+//   item[index].replace('"', '');
+// }
+// return console.log(newArr)
+// })
+
+//   strArr.reduce(function(result, item) {
+//     var key = Object.keys(item)[0]; //first property: a, b, c
+//     result[key] = item[key];
+//     return result;
+//   }, {});
+// }
+// // keep this function call here 
+// console.log(GroupTotals(["X:-1", "Y:1", "X:-4", "B:3", "X:5"]));
+
+
+// function grabDoll(dolls){
+//   var bag=[];
+//  for(let i = 0; i < dolls.length; i++){
+  
+   
+//    if (dolls[i] === 'Hello Kitty' || dolls[i] === 'Barbie doll')
+ 
+//  {
+//    bag.push(dolls[i])
+   
+//  }
+   
+   
+//    else {
+     
+//      continue
+//    }
+   
+   
+//    if ( bag.length === 3)
+   
+//    {
+     
+//      break
+//    }
+//   return bag;
+// }}  
+
+
+feast=(beast, dish)=>beast.slice(0,1)==dish.slice(0,1)&&beast.slice(-1)==dish.slice(-1)
