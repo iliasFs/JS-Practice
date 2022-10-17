@@ -609,4 +609,27 @@
 // }}  
 
 
-feast=(beast, dish)=>beast.slice(0,1)==dish.slice(0,1)&&beast.slice(-1)==dish.slice(-1)
+// feast=(beast, dish)=>beast.slice(0,1)==dish.slice(0,1)&&beast.slice(-1)==dish.slice(-1)
+
+function expressionMatter(a, b, c) {
+  let leftBracket = (a+b)*c
+  let rightBracket = a*(b+c)
+  let multiAll = a*b*c
+  let sumAll = a+b+c
+  
+  if(a===1 &&b===1 && c===1)
+  return 3
+  if(leftBracket>rightBracket && leftBracket>multiAll && leftBracket > sumAll)
+    return leftBracket
+  
+  if (rightBracket>leftBracket && rightBracket > multiAll && rightBracket> sumAll)
+    return rightBracket
+  
+  if(multiAll>leftBracket && multiAll>rightBracket && multiAll> sumAll)
+    return multiAll
+  
+  else return sumAll
+  
+  }
+
+  console.log(expressionMatter(1,2,3))
