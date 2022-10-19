@@ -550,16 +550,14 @@
 //     .reverse()
 //     .join("");
 
-
 //     console.log(typeof(+result))
 //   return +result;
-  
+
 // }
 
 // console.log(descendingOrder(3456));
 
-
-// function GroupTotals(strArr) { 
+// function GroupTotals(strArr) {
 
 //   strArr.forEach((item,index,newArr)=>{
 
@@ -576,60 +574,62 @@
 //     return result;
 //   }, {});
 // }
-// // keep this function call here 
+// // keep this function call here
 // console.log(GroupTotals(["X:-1", "Y:1", "X:-4", "B:3", "X:5"]));
-
 
 // function grabDoll(dolls){
 //   var bag=[];
 //  for(let i = 0; i < dolls.length; i++){
-  
-   
+
 //    if (dolls[i] === 'Hello Kitty' || dolls[i] === 'Barbie doll')
- 
+
 //  {
 //    bag.push(dolls[i])
-   
+
 //  }
-   
-   
+
 //    else {
-     
+
 //      continue
 //    }
-   
-   
+
 //    if ( bag.length === 3)
-   
+
 //    {
-     
+
 //      break
 //    }
 //   return bag;
-// }}  
-
+// }}
 
 // feast=(beast, dish)=>beast.slice(0,1)==dish.slice(0,1)&&beast.slice(-1)==dish.slice(-1)
 
-function expressionMatter(a, b, c) {
-  let leftBracket = (a+b)*c
-  let rightBracket = a*(b+c)
-  let multiAll = a*b*c
-  let sumAll = a+b+c
-  
-  if(a===1 &&b===1 && c===1)
-  return 3
-  if(leftBracket>rightBracket && leftBracket>multiAll && leftBracket > sumAll)
-    return leftBracket
-  
-  if (rightBracket>leftBracket && rightBracket > multiAll && rightBracket> sumAll)
-    return rightBracket
-  
-  if(multiAll>leftBracket && multiAll>rightBracket && multiAll> sumAll)
-    return multiAll
-  
-  else return sumAll
-  
-  }
+// function expressionMatter(a, b, c) {
+//   let leftBracket = (a+b)*c
+//   let rightBracket = a*(b+c)
+//   let multiAll = a*b*c
+//   let sumAll = a+b+c
 
-  console.log(expressionMatter(1,2,3))
+//   if(a===1 &&b===1 && c===1)
+//   return 3
+//   if(leftBracket>rightBracket && leftBracket>multiAll && leftBracket > sumAll)
+//     return leftBracket
+
+//   if (rightBracket>leftBracket && rightBracket > multiAll && rightBracket> sumAll)
+//     return rightBracket
+
+//   if(multiAll>leftBracket && multiAll>rightBracket && multiAll> sumAll)
+//     return multiAll
+
+//   else return sumAll
+
+//   }
+
+//   console.log(expressionMatter(1,2,3))
+
+// function removeDubls(arr) {
+//   return arr.filter((num, index, ar1) => {
+//     return ar1.slice(index + 1, ar1.length).includes(num) ? null : num;
+//   });
+// }
+// console.log(removeDubls([1, 1, 1, 2, 2]));
