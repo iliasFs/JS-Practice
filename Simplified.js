@@ -633,3 +633,58 @@
 //   });
 // }
 // console.log(removeDubls([1, 1, 1, 2, 2]));
+// function remove (string) {
+
+//   if(string[string.length-1] === '!')
+//   return string.split('').slice(0,string.length-1).join('')
+//   return string
+//  }
+
+//  console.log(remove('Mark Hi!'))
+
+// function twoSort(s) {
+//   return s
+//     .sort()
+//     .slice(0, 1)[0]
+//     .split("")
+//     .map((item) => item + "***")
+//     .join("")
+//     .split("")
+//     .slice(0, -3)
+//     .join("");
+// }
+
+// console.log(
+//   twoSort([
+//     "bitcoin",
+//     "take",
+//     "over",
+//     "the",
+//     "world",
+//     "maybe",
+//     "who",
+//     "knows",
+//     "perhaps"
+//   ])
+// );
+
+// function positiveSum(arr) {
+
+//   return  arr.filter(item=>item > 0).reduce((a,b)=>{a+b}),0
+//     }
+
+//   console.log(positiveSum([1,2,3,4,5]));
+
+// function doubleChar(str) {
+//   let newString = "";
+//   for (let i = 0; i < str.length; i++) {
+//     newString += str
+//       .replace(str[i], str[i] + str[i])
+//       .split("")
+//       .slice(i, i + 2)
+//       .join("");
+//   }
+//   return newString;
+// }
+
+// console.log(doubleChar("Adidas"));
