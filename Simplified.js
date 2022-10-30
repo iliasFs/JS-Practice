@@ -692,43 +692,128 @@
 // Input: ["X:-1", "Y:1", "X:-4", "B:3", "X:5"]
 // Output: B:3,Y:1
 
+// function CountingMinutesI(str) {
 
-function CountingMinutesI(str) { 
+//     var split = str.split('-')
 
-    var split = str.split('-')
-  
-    function toMinutes(time) {
-  
-      var hour = parseInt(time.split(':')[0])
-      var minutes = parseInt(time.slice(0, time.length - 2).split(':')[1])
-      var totalMin = hour*60 + minutes
+//     function toMinutes(time) {
+
+//       var hour = parseInt(time.split(':')[0])
+//       var minutes = parseInt(time.slice(0, time.length - 2).split(':')[1])
+//       var totalMin = hour*60 + minutes
+
+//       if (time[time.length - 2] === 'p')
+//         if (hour !== 12)
+//           return totalMin + 720
+//         else
+//           return totalMin
+//       else
+//         if (hour === 12)
+//           return totalMin + 720
+//         else
+//           return totalMin
+//     }
+
+//     var time1 = toMinutes(split[0])
+//     var time2 = toMinutes(split[1])
+
+//     if ( time1 > time2 )
+//       return (1440 - time1) + time2
+//     else
+//       return time2 - time1
+//   }
+
+//   // keep this function call here
+//   CountingMinutesI(readline());
+
+// console.log(GroupTotals(["X:-1", "Y:1", "X:-4", "B:3", "X:5"]))
+
+// function SimpleEvens(num) {
+
+//     let array = num.toString().split('')
+//     let newArray =  num.toString().split('').filter(item => item%2 === 0)
+//     console.log(newArray)
+
+//     return array.length === newArray.length? true:false
+
+//     }
+
+//     console.log(SimpleEvens(123253745674))
+
+// Have the function GroupTotals(strArr) read in the strArr parameter containing key:value pairs where the key is a string and the value is an integer. Your program should return a string with new key:value pairs separated by a comma such that each key appears only once with the total values summed up.
+
+// For example: if strArr is ["B:-1", "A:1", "B:3", "A:5"] then your program should return the string A:6,B:2.
+
+// Your final output string should return the keys in alphabetical order. Exclude keys that have a value of 0 after being summed up.
+
+// function GroupTotals(strArr) {
+//   let strObj = {};
+//   newArr = strArr
+//     .map((item) => item.split(":"))
+//     .map((item) => {
+//       if (item[0] in strObj) {
+//         strObj[item[0]] += parseInt(item[1]);
+//       } else {
+//         strObj[item[0]] = parseInt(item[1]);
+//       }
+//     });
+//   console.log(strObj);
+
+//   for (let item in strObj) {
+//     if (strObj[item] === 0) {
+//       delete strObj[item];
+//     }
+
+//   }
+
+//   let finalArray = Object.keys(strObj).map(
+//     (key) => { return [key, strObj[key]]}
+// )
+//   console.log(finalArray)
+
+//   finalArray.sort()
+//   console.log(finalArray)
+// }
+
+// console.log(GroupTotals(["B:-1", "A:1", "B:3", "A:5"]));
+
+
+
+
+
+// function VowelCount(str) { 
+//     let vowels = 'AaEeIiOoUu'
+//     let finalArray = []
+//   //strArr = ['A', "l", "l".....]
+//     str.split('').map(item=>{
+
+//         if(vowels.includes(item)){
+
+//             finalArray.push(item)
+//         }
       
-      if (time[time.length - 2] === 'p')
-        if (hour !== 12)
-          return totalMin + 720
-        else
-          return totalMin
-      else
-        if (hour === 12)
-          return totalMin + 720
-        else
-          return totalMin
-    }
+//      })
+  
+//      return finalArray.length
     
-    var time1 = toMinutes(split[0])
-    var time2 = toMinutes(split[1])
-    
-    if ( time1 > time2 )
-      return (1440 - time1) + time2
-    else
-      return time2 - time1
-  }
-  
-     
-  // keep this function call here 
-  CountingMinutesI(readline());
-  
-  
+//   }
 
-console.log(GroupTotals(["X:-1", "Y:1", "X:-4", "B:3", "X:5"]))
-   
+//   console.log(VowelCount('coderbyte'))
+
+
+// function ABCheck(str) { 
+
+//     for(i=1; i<str.length; i++){
+  
+//   if (str[i] === 'a' && str[i*4]!== 'b'){
+//     return false
+//     }
+  
+//     return true
+       
+//   }
+//   }
+
+
+
+//   console.log(ABCheck('abccccazzzb'))
