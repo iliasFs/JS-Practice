@@ -777,11 +777,7 @@
 
 // console.log(GroupTotals(["B:-1", "A:1", "B:3", "A:5"]));
 
-
-
-
-
-// function VowelCount(str) { 
+// function VowelCount(str) {
 //     let vowels = 'AaEeIiOoUu'
 //     let finalArray = []
 //   //strArr = ['A', "l", "l".....]
@@ -791,29 +787,104 @@
 
 //             finalArray.push(item)
 //         }
-      
+
 //      })
-  
+
 //      return finalArray.length
-    
+
 //   }
 
 //   console.log(VowelCount('coderbyte'))
 
-
-// function ABCheck(str) { 
+// function ABCheck(str) {
 
 //     for(i=1; i<str.length; i++){
-  
+
 //   if (str[i] === 'a' && str[i*4]!== 'b'){
 //     return false
 //     }
-  
+
 //     return true
-       
+
 //   }
 //   }
-
-
 
 //   console.log(ABCheck('abccccazzzb'))
+
+// function ExOh(str) {
+//     let countx = 0
+//     let counto =0
+
+//     console.log(str.split('x'))
+//     console.log(str.split('o'))
+//   for(let i =0; i<str.length; i++){
+//   if (str[i] === 'x'){
+
+//     countx++
+//   }
+//   else if(str[i] === 'o'){
+
+//     counto++
+//   }
+//   }
+
+//   return countx === counto? 'true':'false'
+
+//   }
+
+//   console.log(ExOh('xoxoxoxoxoxoxoxo'))
+
+// function RunLength(str) {
+//   let obj = {};
+
+//   let strArr = str.split("");
+
+//   for (let i = 0; i < str.length; i++) {
+//     if (obj[str[i]]) {
+//       obj[str[i]] += 1;
+//     } else {
+//       obj[str[i]] = 1;
+//     }
+//   }
+
+//   console.log(obj);
+//   console.log(Object.keys(obj));
+
+//   let newArray = Object.keys(obj).map((key) => [obj[key], key]);
+
+//   return newArray
+//     .join("")
+//     .split("")
+//     .filter((item) => item !== ",")
+//     .join("");
+// }
+
+// // keep this function call here
+// console.log(RunLength("aaaabbbbvvvvnnnn"));
+
+// function LongestWord(sen) {
+//   let regex = /[a-z0-9]+/gi;
+//   let maxLengthIndex = 0;
+//   let arr1 = sen.match(regex);
+//   let arr2 = sen.match(regex).map((item) => item.length);
+//   maxLengthIndex = Math.max(...arr2);
+//   let maxItem = arr2.indexOf(maxLengthIndex);
+
+//   return arr1[maxItem];
+// }
+
+// console.log(LongestWord("123456789 98765432"));
+
+
+function Palindrome(str) { 
+
+  console.log(str.split('').filter(item=>item !== ' ').reverse().join(''))
+  console.log(str.split('').filter(item=>item !== ' ').join(''))
+  return str.split('').filter(item=>item !== ' ').reverse().join('') == str.split('').filter(item=>item !== ' ').join('')? true:false
+
+  console.log(str.split('').reverse().join(''))
+
+}
+   
+// keep this function call here 
+console.log(Palindrome('never odd or even'));
