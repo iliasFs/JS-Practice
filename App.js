@@ -527,16 +527,92 @@ const str1 = '5';
 
 // console.log(max(4, 1, 9, -2))
 
-function max(...numbers) {
-  let result = -Infinity;
-  for (let number of numbers) {
-    if (number > result) result = number;
-  }
-  return result;
-}
+// function max(...numbers) {
+//   let result = -Infinity;
+//   for (let number of numbers) {
+//     if (number > result) result = number;
+//   }
+//   return result;
+// }
 
 
-let numbers = [1,2,3,4,45,5,6,67,78,712,32]
-console.log(max(...numbers))
+// let numbers = [1,2,3,4,45,5,6,67,78,712,32]
+// console.log(max(...numbers))
 
 
+
+// const names= ['james', 'liliana', 'George', 'maria']
+
+// const getNames = 
+
+// console.log(getNames)
+
+// const studentsIdMap = {
+//   1: {
+//     name : 'James Quick',
+//     hours : 12,
+//     year : 'Senior'
+//   },
+
+//   2: {
+//     name : 'Nick Carter',
+//     hours : 7,
+//     year : 'Junior'
+//   },
+
+//   3: {
+//     name : 'Lake Traster',
+//     hours : 10,
+//     year : 'Senior'
+//   },
+
+//   4: {
+//     name : 'George Cave',
+//     hours : 15,
+//     year : 'Freshman'
+//   }
+
+
+// }
+
+// const studentsIdMapCopy = {...studentsIdMap}
+// studentsIdMapCopy[1].name = 'Billy'
+// console.log(studentsIdMapCopy)
+// console.log(studentsIdMap)
+// console.log(studentsIdMap == studentsIdMapCopy)
+
+// function randomPointOnCircle(radius) {
+//   let angle = Math.random() * 2 * Math.PI;
+//   return {x: radius * Math.cos(angle),
+//           y: radius * Math.sin(angle)};
+// }
+// console.log(randomPointOnCircle(2))
+
+// function range(start, end, step) {
+// let numArray = []
+
+// if(step>=0){
+// for ( let i = start; i<=end; i=i+step){
+
+//   numArray.push(i)
+// }}
+
+// else{
+
+//   for (let i=end; i>=start;  i = i + step ){
+
+//     numArray.push(i)
+//   }
+  
+// }
+// return numArray
+// }
+
+// console.log(range(1,10,-2))
+
+// function sum(array){
+
+//  return array.reduce((initial, current)=> initial + current,0)
+// }
+
+// console.log(sum(range(1,10,2)))
