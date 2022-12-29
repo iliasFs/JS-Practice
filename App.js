@@ -319,28 +319,224 @@
 
 // console.log(Sub);
 
-let array = ["Mahesh", "Ruhez", 23, 31, "sameer"];
+// let array = ["Mahesh", "Ruhez", 23, 31, "sameer"];
 
-let sumOfNumbers = 0;
-let lengthOfStrings = 0;
-let sum = 0;
+// let sumOfNumbers = 0;
+// let lengthOfStrings = 0;
+// let sum = 0;
 
-function sums(array) {
-  for (let i = 0; i < array.length; ++i) {
-    if (typeof array[i] === "string") {
-      lengthOfStrings += array[i].length;
-    } else if (typeof array[i] !== "string") {
-      sumOfNumbers += array[i];
-    }
+// function sums(array) {
+//   for (let i = 0; i < array.length; ++i) {
+//     if (typeof array[i] === "string") {
+//       lengthOfStrings += array[i].length;
+//     } else if (typeof array[i] !== "string") {
+//       sumOfNumbers += array[i];
+//     }
+//   }
+//   console.log("the total length of all the strings is: " + lengthOfStrings);
+//   console.log("the total length of all the strings is: " + sumOfNumbers);
+//   console.log(
+//     "The Subtraction gives us the following result: " +
+//       (sumOfNumbers - lengthOfStrings)
+//   );
+// }
+
+// sums(array);
+
+// const person ={
+
+//   name: 'Kyle',
+//   friend :{name : 'Joe',
+//   friend:{name:'Sally'
+
+//         },
+
+//       }
+//    }
+
+//    let currentPerson = person
+//    while(currentPerson != null){
+
+//     console.log(currentPerson.name)
+//     currentPerson = currentPerson.friend
+//    }
+
+// RECURSION
+
+// for(let i =0; i<10; i++){
+
+//   console.log(i)
+// }
+
+//instead of for loop we try out recursion
+
+// function showNumber(number){
+
+//   //base Case
+//   if (number >10) return
+
+//   console.log(number)
+//   showNumber(number +1)
+// }
+// showNumber(1)
+
+//the same as above but now we are going to use Recursion
+// const person ={
+
+//     name: 'Kyle',
+//     friend :{name : 'Joe',
+//     friend:{name:'Sally'
+
+//           },
+
+//         }
+//      }
+
+//      function printNames(Person){
+//      if (Person == null) return
+//       console.log(Person.name)
+//       printNames(Person.friend)
+//      }
+
+//      printNames(person)
+
+//1st itteration  prints Kyle
+//2nd itteratuion prints
+
+//  let currentPerson = person
+//  while(currentPerson != null){
+
+//   console.log(currentPerson.name)
+//   currentPerson = currentPerson.friend
+//  }
+
+// let theNumber = Number(prompt("Pick a number"));
+// if(!Number.isNaN(theNumber)) {
+
+//   console.log("Your number is the square root of " + theNumber*theNumber);
+// }
+
+//     let yourName;
+// do {
+//   yourName = prompt("Who are you?");
+// } while (!yourName);
+// console.log(yourName);
+
+// let result=''
+// for(let i=0; i<8; i++) {
+
+//   result=result +"#"
+//   console.log(result)
+// }
+
+// for(let i=1; i<101; i++)
+
+// if(i % 3 === 0 && i% 5 === 0){
+//   console.log('FizzBuzz')
+
+// }
+
+// else if(i % 3 === 0)
+// {
+//   console.log('Fizz')
+// }
+
+// else if(i % 5 === 0)
+//   {
+
+//     console.log('Buzz')
+//   }
+
+// else{
+//   console.log(i)
+// }
+
+// let string = ' '
+
+// for(let i =1; i<8; i++){
+
+//   for(let j = 1; j<8; j++){
+
+// if ( i % 2 === 0){
+
+//   string += ' ' + '#'
+// }
+// else{
+
+//   string+='#'
+// }
+
+// console.log(string)
+//   }
+// }
+
+// let size = 8;
+
+// let board = "";
+
+// for (let y = 0; y < size; y++) {
+//   for (let x = 0; x < size; x++) {
+//     if ((x + y) % 2 == 0) {
+//       board += " ";
+//     } else {
+//       board += "#";
+//     }
+//   }
+//   board += "\n";
+// }
+
+// console.log(board);
+
+//It takes an array and an index, and it returns a new array that is a copy of the original array with the element at the given index removed.
+// function remove(array, index) {
+//   return array.slice(0, index).concat(array.slice(index + 1));
+// }
+
+// console.log(remove([0, 1, 2, 3, 4, 5, 6], 3));
+
+
+const str1 = '5';
+
+// console.log(str1.padStart(2, '0'));
+
+
+// const fullNumber = '2034399002125581';
+// const last4Digits = fullNumber.slice(-4);
+// const maskedNumber = last4Digits.padStart(fullNumber.length, '*');
+
+
+// console.log(maskedNumber);
+
+
+// let sentence = "Secretarybirds specialize in stomping";
+// let words = sentence.split(" ");
+// console.log(words);
+// console.log(words.join(". "))
+
+// console.log("LA ".repeat(3))
+
+
+// function max(...numbers) {
+//   let result = -Infinity;
+//   for (let number of numbers) {
+//     if (number > result) result = number;
+//   }
+//   return result;
+// }
+
+
+// console.log(max(4, 1, 9, -2))
+
+function max(...numbers) {
+  let result = -Infinity;
+  for (let number of numbers) {
+    if (number > result) result = number;
   }
-  console.log("the total length of all the strings is: " + lengthOfStrings);
-  console.log("the total length of all the strings is: " + sumOfNumbers);
-  console.log(
-    "The Subtraction gives us the following result: " +
-      (sumOfNumbers - lengthOfStrings)
-  );
+  return result;
 }
 
-sums(array);
+
+let numbers = [1,2,3,4,45,5,6,67,78,712,32]
+console.log(max(...numbers))
 
 

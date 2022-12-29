@@ -876,15 +876,74 @@
 // console.log(LongestWord("123456789 98765432"));
 
 
-function Palindrome(str) { 
+// function Palindrome(str) { 
 
-  console.log(str.split('').filter(item=>item !== ' ').reverse().join(''))
-  console.log(str.split('').filter(item=>item !== ' ').join(''))
-  return str.split('').filter(item=>item !== ' ').reverse().join('') == str.split('').filter(item=>item !== ' ').join('')? true:false
+//   console.log(str.split('').filter(item=>item !== ' ').reverse().join(''))
+//   console.log(str.split('').filter(item=>item !== ' ').join(''))
+//   return str.split('').filter(item=>item !== ' ').reverse().join('') == str.split('').filter(item=>item !== ' ').join('')? true:false
 
-  console.log(str.split('').reverse().join(''))
+//   console.log(str.split('').reverse().join(''))
 
-}
+// }
    
-// keep this function call here 
-console.log(Palindrome('never odd or even'));
+// // keep this function call here 
+// console.log(Palindrome('never odd or even'));
+
+
+
+// function printPattern(range) {
+//   var str=""
+//   let j=1
+//   for(var i=1;i<=range;i++){   
+//   str += j;
+//   j++
+//   console.log(str);
+//     }
+    
+//   }
+// printPattern(8);
+
+
+// function digitSum(num) {
+//   var sum=0;
+//   while(num!=0){
+//    sum += num % 10;
+//    num = Math.floor(num/10);
+//   }
+//   return sum;
+// }
+// console.log(digitSum(4367)); //20
+// console.log(digitSum(56349)); //27
+
+
+// var arr = [2, 45, 3, 67, 34, 567, 34, 345, 123];  
+// var largest = arr[0];
+// for(var i=0;i<arr.length;i++){
+//    largest = arr[i]>largest ? arr[i]:largest; 
+// }
+// console.log(largest)
+
+
+// var arr = [[0,1,1],[0,1,0],[1,0,0]];
+// var zeroCount = [];
+// for(var i=0;i<arr.length;i++){
+//   for(var j=0;j<arr[0].length;j++){
+//     if(arr[i][j]==0){
+
+// zeroCount.push(arr[i][j])
+//     }
+//   }
+// }
+// console.log(zeroCount.length)Pro
+
+
+function findProd(arr1, arr2) {
+  arrProd = []
+  for(var i=0; i < arr1.length; i++){
+     arrProd.push(arr1[i] * arr2[i]); 
+  }
+  return arrProd
+}
+
+
+console.log(findProd([3,45,23,78,34], [4,2,34,4,12,1]))
