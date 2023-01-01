@@ -494,19 +494,15 @@
 
 // console.log(remove([0, 1, 2, 3, 4, 5, 6], 3));
 
-
-const str1 = '5';
+const str1 = "5";
 
 // console.log(str1.padStart(2, '0'));
-
 
 // const fullNumber = '2034399002125581';
 // const last4Digits = fullNumber.slice(-4);
 // const maskedNumber = last4Digits.padStart(fullNumber.length, '*');
 
-
 // console.log(maskedNumber);
-
 
 // let sentence = "Secretarybirds specialize in stomping";
 // let words = sentence.split(" ");
@@ -515,7 +511,6 @@ const str1 = '5';
 
 // console.log("LA ".repeat(3))
 
-
 // function max(...numbers) {
 //   let result = -Infinity;
 //   for (let number of numbers) {
@@ -523,7 +518,6 @@ const str1 = '5';
 //   }
 //   return result;
 // }
-
 
 // console.log(max(4, 1, 9, -2))
 
@@ -535,15 +529,12 @@ const str1 = '5';
 //   return result;
 // }
 
-
 // let numbers = [1,2,3,4,45,5,6,67,78,712,32]
 // console.log(max(...numbers))
 
-
-
 // const names= ['james', 'liliana', 'George', 'maria']
 
-// const getNames = 
+// const getNames =
 
 // console.log(getNames)
 
@@ -571,7 +562,6 @@ const str1 = '5';
 //     hours : 15,
 //     year : 'Freshman'
 //   }
-
 
 // }
 
@@ -603,7 +593,7 @@ const str1 = '5';
 
 //     numArray.push(i)
 //   }
-  
+
 // }
 // return numArray
 // }
@@ -616,3 +606,131 @@ const str1 = '5';
 // }
 
 // console.log(sum(range(1,10,2)))
+
+// function arrayToList(array) {
+//   let list = null;
+//   for (let i = array.length - 1; i >= 0; i--) {
+//     list = {value: array[i], rest: list};
+//     console.log(list)
+//   }
+//   return list;
+// }
+
+// function listToArray(list) {
+//   let array = [];
+//   for (let node = list; node; node = node.rest) {
+//     array.push(node.value);
+//   }
+//   return array;
+// }
+
+// function prepend(value, list) {
+//   return {value, rest: list};
+// }
+
+// function nth(list, n) {
+//   if (!list) return undefined;
+//   else if (n == 0) return list.value;
+//   else return nth(list.rest, n - 1);
+// }
+
+// console.log(arrayToList([10, 20,30,40,50]));
+// // → {value: 10, rest: {value: 20, rest: null}}
+// console.log(listToArray(arrayToList([10, 20, 30])));
+// // → [10, 20, 30]
+// console.log(prepend(10, prepend(20, null)));
+// // → {value: 10, rest: {value: 20, rest: null}}
+// console.log(nth(arrayToList([10, 20, 30]), 1));
+// // → 20
+
+let list = {
+  value: 1,
+  rest: {
+    value: 2,
+    rest: {
+      value: 3,
+      rest: null,
+    },
+  },
+};
+
+console.log(list.value)
+
+function arrayToList(array) {
+list = null
+  for(let i = array.length -1; i>=0; i--){
+
+list = {value:array[i], rest:list}
+console.log(list)
+  }
+  return list
+
+
+}
+
+
+console.log(arrayToList([1,2,3]))
+
+let array = [];
+let node = list;
+function listToArray(newlist){
+
+  
+while (node) { // shorthand for `!!node`: tests the value to be truthy
+  array.push(node.value);
+  node = node.rest;
+}
+return array
+}
+
+console.log(listToArray())
+
+
+
+function prepend(element,newList){
+
+ return newList = {element, rest: list }
+
+
+}
+
+function nth(list, n) {
+  if (!list) return undefined;
+  else if (n == 0) return list.value;
+  else{
+  
+   return nth(list.rest, n - 1); // return nth(list.rest, 2-1)
+  }
+
+}
+
+  console.log(nth(list,2))
+
+
+  function deepEqual(value1, value2){
+if(value1 === value2) return true;
+
+if (val1 == null || typeof val1 !== 'object' ||
+      val2 == null || typeof val2 !== 'object') return false;
+
+let keys1 = Object.keys(value1) 
+let keys2 = Object.keys(value2) 
+
+if(keys1.length != keys2.length) return false
+
+
+for (let key of keys1){
+
+  if(!keys2.includes(key)) {return false}
+  
+}
+
+return true
+
+  }
+  
+
+
+
+
+
